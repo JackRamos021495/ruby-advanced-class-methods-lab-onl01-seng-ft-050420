@@ -29,7 +29,7 @@ class Song
     new
   end
 
-  
+
   def self.find_by_name(name)
     @@all.find{|person| person.name == name}
   end
@@ -45,7 +45,7 @@ class Song
   def self.alphabetical
     @@all.sort_by {|person| person.name }
   end
-  
+
   def self.new_from_filename(file)
     new = self.new
     array = file.split(/\ - /)
